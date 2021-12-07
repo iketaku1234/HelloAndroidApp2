@@ -8,12 +8,11 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    //テスト
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello Android!"/>
+        android:text="Hello Android!"
+        android:textSize="40sp" />
 
 </LinearLayout>
 
