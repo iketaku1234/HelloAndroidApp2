@@ -1,24 +1,16 @@
 package jp.techacademy.takuya.ikeda.kotlinlog
-
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 
-class
-MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        Log.d("kotlintest","ログへの出力テスト")//ここを追加
-
-        var num = 0
-
-        while(num<10){
-            Log.d("kotlintest",Integer.toString(num))
-            num++
-        }
-
+        val human = Human("太郎", 20,"野球") // 名前を太郎、年齢20歳で、Humanのインスタンスを作る
+        human.say()
+        human.think()
     }
 }
