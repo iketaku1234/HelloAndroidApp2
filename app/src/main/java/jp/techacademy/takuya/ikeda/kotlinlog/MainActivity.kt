@@ -13,6 +13,8 @@ class MainActivity : AppCompatActivity() {
         val human2 = Human("花子", 25,"手芸")//名前を花子、年齢25歳で、趣味が手芸のHumanのインスタンスを作る
 
         human.say()
+        human.think()
+        human2.say()
         human2.think()
     }
 }
